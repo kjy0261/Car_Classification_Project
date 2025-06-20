@@ -16,7 +16,7 @@
 + pretrained 된 ResNet18을 활용하여 분류 모델 구축
 
 ## 데이터셋
-데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상],(https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172)
+데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172),
 [Roboflow kickboard](https://universe.roboflow.com/inha-univ-vgzgz/kickboard-ibhkj/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 
 + 작은 데이터셋에 한해 Data augmentation 진행 (Flip, Rotation, ResizeCrop, ColorJitter)
