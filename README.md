@@ -15,3 +15,5 @@
 + Python, Pytorch, torchvision
 + pretrained 된 ResNet18을 활용하여 분류 모델 구축
 
+## 데이터 전처리
+데이터셋은 AI Hub의 >자동차 차종/연식/번호판 인식용 영상
