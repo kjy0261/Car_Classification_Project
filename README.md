@@ -31,5 +31,7 @@
   - 현대자동차, 기아자동차, GM, BMW, 벤츠, 아우디, 테슬라, 쌍용자동차, 도요타, 혼다
 - **비승용차일 경우 (Type)**  
   - 트럭, 버스, 이륜차, 킥보드
+ 
+  
  ![제목 없는 동영상 - Clipchamp로 제작](https://github.com/user-attachments/assets/c30c4c73-da94-4cc0-8c94-49d5d4a5b721)
 
