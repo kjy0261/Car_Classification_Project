@@ -32,6 +32,51 @@
 - **비승용차일 경우 (Type)**  
   - 트럭, 버스, 이륜차, 킥보드
  
+
+## English
+# 🚗 Outdoor Smart Parking System with Vehicle Type Recognition
+
+## 🎯 Project Goal
+
+- Detect the **vehicle type and brand** of incoming cars in an outdoor parking lot.
+- Based on the classification result, **guide vehicles to available parking spaces** depending on their category.
+- I was responsible for developing the **vehicle classification AI module** as part of this project.
+
+---
+
+## 🤖 Vehicle Classification AI Overview
+
+- Classifies **5 vehicle types**: Truck, Passenger Car, Bus, Motorcycle, Electric Kickboard
+- Classifies **Top 10 vehicle brands** (based on frequency in dataset)
+- Built using **Python, PyTorch, and torchvision**
+- Utilizes a **pretrained ResNet18** model for transfer learning and classification
+
+---
+
+## 🗂️ Dataset
+
+- Primary datasets:
+  - AI Hub: "Vehicle type/year/license plate recognition video dataset"
+  - Roboflow Kickboard Dataset
+- Applied **data augmentation** for minority classes using:
+  - Random Flip, Rotation, ResizeCrop, ColorJitter
+
+---
+
+## 🧠 Classification Pipeline
+
+### 🔹 Stage 1 – Passenger Car Classification (Binary)
+- **Class 0**: Passenger Car  
+- **Class 1**: Non-Passenger Vehicle
+
+### 🔹 Stage 2 – Fine-Grained Classification
+
+#### If Passenger Car → **Brand Classification** (10 classes)
+- Hyundai, Kia, GM, BMW, Mercedes-Benz, Audi, Tesla, SsangYong, Toyota, Honda
+
+#### If Non-Passenger → **Type Classification** (4 classes)
+- Truck, Bus, Motorcycle, Kickboard
+
   
  ![제목 없는 동영상 - Clipchamp로 제작](https://github.com/user-attachments/assets/c30c4c73-da94-4cc0-8c94-49d5d4a5b721)
 
