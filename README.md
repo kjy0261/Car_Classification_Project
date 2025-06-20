@@ -17,3 +17,8 @@
 
 ## 데이터 전처리
 데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172)
+[Roboflow kickboard](https://universe.roboflow.com/inha-univ-vgzgz/kickboard-ibhkj/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
+
++ 각 차종, 브랜드 간 데이터 수 차이로 인한 쏠림 현상 방지
++ 2000장을 넘어가는 sample은 random sampling / 2000장 이하의 sample은 data augmentation 진행
++ 
