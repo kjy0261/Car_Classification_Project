@@ -16,7 +16,7 @@
 + pretrained 된 ResNet18을 활용하여 분류 모델 구축
 
 ## 데이터셋
-데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172)
+데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상],(https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172)
 [Roboflow kickboard](https://universe.roboflow.com/inha-univ-vgzgz/kickboard-ibhkj/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 
 + 작은 데이터셋에 한해 Data augmentation 진행 (Flip, Rotation, ResizeCrop, ColorJitter)
@@ -31,4 +31,5 @@
   - 현대자동차, 기아자동차, GM, BMW, 벤츠, 아우디, 테슬라, 쌍용자동차, 도요타, 혼다
 - **비승용차일 경우 (Type)**  
   - 트럭, 버스, 이륜차, 킥보드
- 
+ ![제목 없는 동영상 - Clipchamp로 제작](https://github.com/user-attachments/assets/c30c4c73-da94-4cc0-8c94-49d5d4a5b721)
+
