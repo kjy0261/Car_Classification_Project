@@ -15,10 +15,20 @@
 + Python, Pytorch, torchvision
 + pretrained 된 ResNet18을 활용하여 분류 모델 구축
 
-## 데이터 전처리
+## 데이터셋
 데이터셋은 [AI Hub의 자동차 차종/연식/번호판 인식용 영상](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=172)
 [Roboflow kickboard](https://universe.roboflow.com/inha-univ-vgzgz/kickboard-ibhkj/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
 
-+ 각 차종, 브랜드 간 데이터 수 차이로 인한 쏠림 현상 방지
-+ 2000장을 넘어가는 sample은 random sampling / 2000장 이하의 sample은 data augmentation 진행
-+ 
++ 작은 데이터셋에 한해 Data augmentation 진행 (Flip, Rotation, ResizeCrop, ColorJitter)
+
+## 분류 모델
+### 1단계 승용차 여부 분류
+- class 0 : 승용차
+- class 1 : 비승용차
+
+### 2단계 분류
+- **승용차일 경우 (Brand)**  
+  - 현대자동차, 기아자동차, GM, BMW, 벤츠, 아우디, 테슬라, 쌍용자동차, 도요타, 혼다
+- **비승용차일 경우 (Type)**  
+  - 트럭, 버스, 이륜차, 킥보드
+ 
