@@ -44,7 +44,8 @@
 
 - **비승용차일 경우 (Type)**  
   - 트럭, 버스, 이륜차, 킥보드
- 
+
+ UI는 Streamlit 사용
 
 ## English
 # 🚗 Outdoor Smart Parking System with Vehicle Type Recognition
